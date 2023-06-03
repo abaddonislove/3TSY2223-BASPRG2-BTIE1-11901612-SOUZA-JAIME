@@ -12,6 +12,7 @@ struct item
 	int gold;
 };
 
+// Ex 3-1
 item* generateItem(item* list)
 {
 	int selected = rand() % 5;
@@ -48,6 +49,7 @@ void printSold(int newG, int oldG, vector<item*> bag)
 	system("CLS");
 }
 
+// Ex 3-2
 void enterDungeon(int& g, vector<item*>& bag, item items[5])
 {
 	g -= 25;
@@ -134,6 +136,7 @@ int main()
 
 	system("CLS");
 
+	// Ex 3-3
 	while(gold > 24)
 	{
 		cout << "Entering dungeon..." << endl << endl;
@@ -143,7 +146,7 @@ int main()
 		enterDungeon(gold, bag, items);
 
 		
-
+		// Ex 3-3
 		if (gold >= 500)
 		{
 			cout << "Current Gold: " << gold << endl;
@@ -157,6 +160,7 @@ int main()
 	cout << "You lose brokey. GG" << endl;
 	system("pause");
 	return 0;
+	
 	/*item* temp = generateItem(&items[0]);
 	bag.push_back(temp);
 
