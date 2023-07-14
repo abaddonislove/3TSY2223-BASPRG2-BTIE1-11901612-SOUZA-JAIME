@@ -122,7 +122,6 @@ int main()
 
         cin.ignore();
     }
-    
 
 
 }

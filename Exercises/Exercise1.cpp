@@ -12,7 +12,7 @@ int bet(int& w)
     {
         cout << "Input bet: ";
         cin >> b;
-    } while( b <= 0 || b > w);
+    } while (b <= 0 || b > w);
     
     w -= b;
     return b;
